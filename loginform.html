@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="loginFormwrapper">
+      <div class="formMainWrapper">
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <div class="card form-holder">
+              <div class="card-body">
+                <div class="form-title">
+                  <h1 id="login-header">Login Form</h1>
+                </div>
+                <form id="login-form" name="LoginForm" class="login-form needs-validation" method="POST" novalidate>
+                  <div class="form-group">
+                    <label for="username-field">Enter the Username</label>
+                    <input type="text" name="username" id="username-field" class="login-form-field form-control" placeholder="Username" required>
+                    <div class="invalid-feedback">
+                      Please choose a unique and valid username.
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password-field">Enter the Password</label>
+                    <input type="password" name="password" id="password-field" class="login-form-field form-control" placeholder="Password" required>
+                    <div class="invalid-feedback">
+                      Password must be the 8 characters and that should be combination of Alphabets and numbers and special symbols.
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input class="btn btn-primary btn-block" type="submit" value="Login" id="login-form-submit">
+                    </div>
+                    <div class="col-md-6">
+                      <input class="btn btn-danger btn-block" type="button" value="Cancel" id="lobin-form-cancel">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="login-error-msg-holder">
+        <p id="login-error-msg">Password must be the 8 characters and that should be combination of Alphabets and numbers and special symbols.</p>
+      </div>
+      <div id="login-success-msg-holder">
+        <p id="login-success-msg">You have a successfully loged in</p>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
